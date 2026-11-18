@@ -2,6 +2,10 @@
 
 《机器学习》期末项目 · 学号 028123420 · 李佳
 
+仓库地址：<https://github.com/sjdfcsnd/solder-inspect-agent>
+
+> 图片说明：下面所有演示图都以相对路径随仓库提交在 `docs/images/` 内。GitHub 渲染 README 时图片经由 raw 域名取回，部分网络环境下会显示为未加载的占位框（文字与表格不受影响）；此时可点开 [`docs/images`](docs/images) 目录逐张查看，或打开离线预览页 <https://aka.doubaocdn.com/s/e7idmW4J4U>（README 全文与 10 张演示图在同一页内）。
+
 ![整板演示结果](docs/images/annotated_board_055.png)
 
 一块焊好的电路板，手机拍一张正射照片，系统自动找出全部焊点、判定每个焊点是正常、桥连、虚焊少锡、多锡还是偏移，把「拿不准」和「高影响」的焊点交给人工复核，最后输出标注图与可留档的 JSON。
