@@ -1,0 +1,25 @@
+# 运行配置示例：所有脚本均可通过命令行参数覆盖这些默认值
+agent:
+  locator: auto            # auto | classic | yolo
+  yolo_weights: weights/yolo_best.pt
+  classifier: resnet18     # resnet18 | shallow | svm
+  threshold: 0.35
+  expected_joints: 24
+
+gate:
+  lap_threshold: 60.0
+  overexpose_ratio: 0.20
+  dark_ratio: 0.15
+
+route:
+  high_impact_class: 1     # 桥连
+  high_impact_threshold: 0.75
+  min_gap: 0.10
+
+train:
+  seed: 42
+  batch: 32
+  epochs_resnet: 12
+  freeze_epochs: 4
+  lr: 0.001
+  class_weight_bridge_boost: 1.5
